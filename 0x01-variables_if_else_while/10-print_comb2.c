@@ -11,17 +11,22 @@
 int main(void)
 {
 int i;
-for (i = 0; i < 100 ; ++i)
+int j;
+for (i = '0'; i <= '9' ; ++i)
 {
-putchar((i / 10) + 0);
-putchar((i % 10) + 0);
-if (i == 99)
+for (j = '0'; j <= '9' ; ++j)
+{
+putchar(i);
+putchar(j);
+if (i == '9' && j == '9')
 putchar('\n');
 else
 {
 putchar(',');
 putchar(' ');
 }
+}
+
 }
 return (0);
 }
