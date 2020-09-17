@@ -19,8 +19,8 @@ if (i == 99)
 putchar('\n');
 else
 {
-putchar(' ');
 putchar(',');
+putchar(' ');
 }
 return (0);
 }
