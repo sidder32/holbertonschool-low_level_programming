@@ -25,10 +25,8 @@ if (i != j && j != c)
 putchar(i);
 putchar(j);
 putchar(c);
-
 if (i == '7' && j == '8' && c == '9')
-#putchar('\n');
-i=0;
+putchar('\n');
 else
 {
 putchar(',');
