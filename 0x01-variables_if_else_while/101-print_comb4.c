@@ -27,7 +27,7 @@ putchar(j);
 putchar(c);
 
 if (i == '7' && j == '8' && c == '9')
-putchar('\n');
+putchar('');
 else
 {
 putchar(',');
