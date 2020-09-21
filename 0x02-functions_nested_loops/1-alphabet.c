@@ -1,0 +1,21 @@
+#include <unistd.h>
+#include "holberton.h"
+
+/**
+ * print_alphabet - writes the alphabet c to stdout
+ * The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int print_alphabet(void)
+{
+int (i);
+for (i = 'a'; i <= 'z'; ++i)
+{
+_putchar(i);
+}
+_putchar('\n');
+
+return (0);
+}
