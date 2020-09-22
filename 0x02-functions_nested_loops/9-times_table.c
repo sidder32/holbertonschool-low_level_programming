@@ -2,26 +2,40 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - print every minutes of the day of Jack Bauer
+ * times_table - prints 9 times table,
  *
  *
  * Return: 1 return last digit value of n,
  */
-void jack_bauer(void)
+void times_table(void)
 {
-int h;
-int m;
-for (h = 0; h <= 23; ++h)
+int i;
+int j;
+int r;
+for (i = 0; i <= 9; ++i)
 {
-for (m = 0; m <= 59; ++m)
+for (j = 0; j <= 9; ++j)
 {
-_putchar(h / 10 + '0');
-_putchar(h % 10 + '0');
-_putchar(':');
-_putchar(m / 10 + '0');
-_putchar(m % 10 + '0');
-_putchar('\n');
+r = i * j;
+if (r > 9)
+{
+_putchar(r / 10 + '0');
+_putchar(r % 10 + '0');
 }
+else
+{
+if (j > 0)
+_putchar(' ');
+_putchar(r + '0');
+}
+if (j < 9)
+{
+_putchar(',');
+_putchar(' ');
+}
+}
+_putchar('\n');
 }
 
 }
+
