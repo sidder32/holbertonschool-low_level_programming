@@ -26,11 +26,11 @@ printf("%d", r);
 else
 {
 if (r >= 100)
-printf(" %d", r);
+printf("%d", r);
 else if (r >= 10)
-printf("  %d", r);
+printf(" %d", r);
 else
-printf("   %d", r);
+printf("  %d", r);
 }
 if (j < n)
 {
