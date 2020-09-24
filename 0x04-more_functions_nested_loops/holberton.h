@@ -4,3 +4,4 @@
 #include <stdio.h>
 int _putchar(char c);
 #endif /* HOLBERTON_H */
+int _isupper(int c);
