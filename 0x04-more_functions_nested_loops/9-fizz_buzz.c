@@ -19,7 +19,10 @@ printf("FizzBuzz ");
 else if (divt == 0)
 printf("Fizz ");
 else if (divc == 0)
+if (i < 100)
 printf("Buzz ");
+else
+printf("Buzz");
 else
 printf("%d ", i);
 }
